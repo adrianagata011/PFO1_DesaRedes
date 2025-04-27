@@ -92,7 +92,7 @@ ID    | Contenido                               | Fecha de Envío         | IP C
 99    | Conexión cerrada                        | 2025-04-27 14:33:35    | 127.0.0.1
 ```
 
-### Ejemplo de ejecución en cliente.py
+### Ejemplo de ejecución en `cliente.py`
 ```plaintext
 [INFO] Conexión exitosa con el servidor.
 [INFO] Conectado al servidor. Puedes empezar a enviar mensajes.
@@ -104,7 +104,7 @@ Escribe un mensaje (o 'éxito' para salir): éxito
 [INFO] Cerrando la conexión.
 ```
 
-### Ejemplo de ejecución en lector_mensajes.py
+### Ejemplo de ejecución en `lector_mensajes.py`
 ```plaintext
 === MENSAJES GUARDADOS ===
 ID    | Contenido                               | Fecha de Envío         | IP Cliente
