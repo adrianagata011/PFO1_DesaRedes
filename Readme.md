@@ -74,7 +74,7 @@ El sistema consta de **tres programas**:
    ```
 3. **Consultar mensajes almacenados (opcional):**
    ```bash
-python lector_mensajes.py
+    python lector_mensajes.py
    ```
 
 ## 💬 Ejemplos de salida en consola
