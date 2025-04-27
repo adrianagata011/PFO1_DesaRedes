@@ -118,7 +118,7 @@ ID    | Contenido                               | Fecha de Envío         | IP C
 - El sistema es **monocliente**: permite manejar **un cliente a la vez** por simplicidad.
 - La base de datos `mensajes.db` se genera automáticamente la primera vez que se ejecuta el **servidor**.
 - Ante cualquier error de conexión o de base de datos, el sistema muestra **mensajes de error claros** para facilitar el diagnóstico.
-- Se recomienda detener el servidor utilizando `Ctrl+C` para una **desconexión segura**.
+- Se recomienda detener el servidor utilizando `Ctrl+C` para una **desconexión segura** una vez que la aplicación cliente.py se haya desconectado.
 - La arquitectura utilizada es **local** (`localhost`), pensada para pruebas en el entorno de desarrollo.
 - No es necesario instalar dependencias externas: **todos los módulos utilizados son estándar de Python**.
 
