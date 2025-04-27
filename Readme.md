@@ -72,12 +72,43 @@ El sistema consta de **tres programas**:
    ```bash
     python cliente.py   
    ```
-3. **Enviar mensajes desde el cliente.**
-   ```bash
-    # Escribir cualquier texto.
-    # Para finalizar la sesión: escribir "éxito"
-   ```
-4. **Consultar mensajes almacenados (opcional):**
+3. **Consultar mensajes almacenados (opcional):**
    ```bash
 python lector_mensajes.py
    ```
+
+## 💬 Ejemplos de salida en consola
+
+### Ejemplo de ejecución en `servidor.py`
+```plaintext
+[INFO] Servidor escuchando en localhost:5000...
+
+=== MENSAJES RECIBIDOS - Presione Ctrl+C para salir ===
+ID    | Contenido                               | Fecha de Envío         | IP Cliente
+------------------------------------------------------------------------------------------
+99    | Conexión recibida                       | 2025-04-27 14:33:21    | 127.0.0.1
+1     | Hola servidor!                         | 2025-04-27 14:33:25    | 127.0.0.1
+2     | ¿Cómo estás?                           | 2025-04-27 14:33:30    | 127.0.0.1
+99    | Conexión cerrada                        | 2025-04-27 14:33:35    | 127.0.0.1
+```
+
+### Ejemplo de ejecución en cliente.py
+```plaintext
+[INFO] Conexión exitosa con el servidor.
+[INFO] Conectado al servidor. Puedes empezar a enviar mensajes.
+Escribe un mensaje (o 'éxito' para salir): Hola servidor!
+[SERVER] Mensaje recibido: 2025-04-27 14:33:25
+Escribe un mensaje (o 'éxito' para salir): ¿Cómo estás?
+[SERVER] Mensaje recibido: 2025-04-27 14:33:30
+Escribe un mensaje (o 'éxito' para salir): éxito
+[INFO] Cerrando la conexión.
+```
+
+### Ejemplo de ejecución en lector_mensajes.py
+```plaintext
+=== MENSAJES GUARDADOS ===
+ID    | Contenido                               | Fecha de Envío         | IP Cliente
+------------------------------------------------------------------------------------------
+1     | Hola servidor!                         | 2025-04-27 14:33:25    | 127.0.0.1
+2     | ¿Cómo estás?                           | 2025-04-27 14:33:30    | 127.0.0.1
+```
