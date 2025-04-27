@@ -112,3 +112,14 @@ ID    | Contenido                               | Fecha de Envío         | IP C
 1     | Hola servidor!                         | 2025-04-27 14:33:25    | 127.0.0.1
 2     | ¿Cómo estás?                           | 2025-04-27 14:33:30    | 127.0.0.1
 ```
+
+## 📚 Notas Finales
+
+- El sistema es **monocliente**: permite manejar **un cliente a la vez** por simplicidad.
+- La base de datos `mensajes.db` se genera automáticamente la primera vez que se ejecuta el **servidor**.
+- Ante cualquier error de conexión o de base de datos, el sistema muestra **mensajes de error claros** para facilitar el diagnóstico.
+- Se recomienda detener el servidor utilizando `Ctrl+C` para una **desconexión segura**.
+- La arquitectura utilizada es **local** (`localhost`), pensada para pruebas en el entorno de desarrollo.
+- No es necesario instalar dependencias externas: **todos los módulos utilizados son estándar de Python**.
+
+---
